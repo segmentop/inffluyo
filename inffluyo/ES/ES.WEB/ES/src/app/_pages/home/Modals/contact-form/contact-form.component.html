@@ -1,0 +1,47 @@
+<div class="modal-header d-flex justify-content-center align-items-center">
+    <button type="button" class="btn btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+
+    </button>
+</div>
+<div class="modal-body p-0">
+    <div class="col-sm-12 d-flex justify-content-center align-items-center">
+        <span
+            class="col-sm-6 py-2 bg-warning text-white d-flex flex-column justify-content-center align-items-center">LOG
+            IN</span>
+        <span class="col-sm-6 py-2 text-secondary d-flex flex-column justify-content-center align-items-center">REGISTER
+            HERE</span>
+    </div>
+    <form formGroup="form" class="col-sm-12 px-4">
+        <div class="form-group">
+            <input type="email" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="company" placeholder="Company´s name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="fname" placeholder="First name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="sname" placeholder="Last name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="cemail" placeholder="Confirm email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control mt-2 border-warning rounded-0 border-0 border-bottom"
+                formControlName="company" placeholder="Enter password">
+        </div>
+        <div class="form-group mt-2">
+            <label for="exampleFormControlSelect1">Country</label>
+            <select class="form-control rounded-0 border-0" id="exampleFormControlSelect1">
+                <option>Colombia</option>
+                <option>Brasil</option>
+            </select>
+        </div>
+    </form>
+</div>

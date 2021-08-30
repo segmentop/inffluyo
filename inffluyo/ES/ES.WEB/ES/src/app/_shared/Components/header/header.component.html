@@ -1,0 +1,26 @@
+<nav class="col-sm-12 navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="btn btn-danger"><strong>Inffluyo</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex flex-wrap justify-content-between align-items-center" id="navbarSupportedContent">
+        <ul class="col-md-7 col-sm-12 navbar-nav mr-auto">
+            <li class="nav-item active" *ngFor="let menu of dataHead.menu">
+                <a class="nav-link text-nowrap" href="#">{{menu.name}}</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto col-md-2 col-sm-12">
+            <li class="nav-item active">
+                <a class="nav-link text-nowrap" href="#">Influencers</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto col-md-2 col-sm-12">
+            <li class="nav-item active" *ngFor="let menu of dataHead.menuR">
+                <a class="nav-link text-nowrap"
+                    [ngClass]="{'text-danger':menu.name == 'Login','text-success':menu.name == 'Registro'}"
+                    href="#">{{menu.name}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

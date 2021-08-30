@@ -1,0 +1,70 @@
+<div class="col-sm-12 d-flex flex-column justify-content-center align-items-center p-0">
+    <div class="col-sm-12 p-0 d-flex flex-wrap-reverse justify-content-center align-items-center py-4">
+        <div class="col-md-5 col-sm-10 d-flex flex-wrap justify-content-center align-items-center px-4">
+            <h2>
+                La <span class="text-danger">influencia social</span> necesaria para tus ideas, experiencias o
+                servicios.
+            </h2>
+            <p>
+                <span class="text-danger">Micro-influencers</span> para <span class="text-danger">movilizar</span> las
+                campañas de
+                instituciones, política, sociedad, universidades, solidaridad, cultura, deportes o startups
+            </p>
+        </div>
+        <div class="col-md-5 col-sm-10 d-flex justify-content-center align-items-center">
+            <img class="bgpromo" src="assets/img/phonepromo.png">
+        </div>
+    </div>
+    <div class="col-sm-12 p-0 d-flex flex-wrap justify-content-center align-items-center py-4"
+        style="background-color: rgba(0,0,0,0.05);">
+        <div class="col-sm-10 p-0 d-flex flex-wrap justify-content-between align-items-center py-4">
+            <button class="col-sm-4 p-4 btn btn-light bg-transparent border-0 border-right border-light btn-child"
+                *ngFor="let info of data.menuHome" [innerHTML]="info.name" (click)="openModal(info.route)"></button>
+        </div>
+    </div>
+    <div class="col-sm-12 bg-secondary p-0 d-flex flex-column justify-content-center align-items-center p-4">
+        <div class="col-sm-10 p-0 d-flex flex-column justify-content-between align-items-center p-4">
+            <h1>¿Qué diferencia a inffluyo?</h1>
+            <ul class="mt-2">
+                <li class="mt-2" *ngFor="let dif of data.diferencias" [innerHTML]="dif">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-success col-sm-12 d-flex justify-content-center align-items-center">
+        <h3 class="text-white">El buen contenido llama tu atención. un gran contenido <span class="text-danger">inspira
+                acción</span></h3>
+    </div>
+    <div class="col-sm-12 d-flex justify-content-between align-items-center bg-primary p-4">
+        <div class="d-flex flex-column justify-content-center align-items-center"
+            *ngFor="let afl of data.buttonsCampain">
+            <i class="text-white" style="font-size:25px;" [ngClass]="afl.name"></i>
+            <span class="text-white">{{afl.title}}</span>
+        </div>
+    </div>
+    <div class="col-sm-12 p-0 d-flex flex-wrap-reverse justify-content-center align-items-center py-4">
+        <div class="col-md-5 col-sm-10 d-flex flex-wrap justify-content-center align-items-center px-4">
+            <h2>
+                Todas tus campañas en un solo lugar.
+            </h2>
+            <p>
+                Inffluyo ofrece una variedad de herramientas que agilizan la gestión de campañas de marketing de
+                influencers. Ahorra tiempo activando tus campañas, calcula su impacto y realiza un seguimiento de su
+                éxito, todo en una plataforma, bajo tu control.
+            </p>
+            <p>
+                <strong>
+                    Detrás de cada campaña exitosa está la capacidad de atraer y deleitar a tu comunidad. <span
+                        class="text-danger">Inffluyo te
+                        permite hacer precisamente eso</span>
+                </strong>
+            </p>
+        </div>
+        <div class="col-md-5 col-sm-10 d-flex justify-content-center align-items-center">
+            <img class="bgpromo" src="assets/img/girlwork.png">
+        </div>
+    </div>
+    <div class="col-sm-12 d-flex justify-content-center align-items-center">
+        <h3 class="text-secondary">Los humanos aman a los humanos</h3>
+    </div>
+</div>

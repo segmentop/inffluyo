@@ -1,0 +1,10 @@
+.bg-light {
+    background-color: transparent;
+}
+.nav-link {
+    transition: ease all 0s;
+    &:hover {
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
